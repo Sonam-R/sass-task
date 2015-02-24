@@ -1,7 +1,6 @@
 body, html {
   height: 100%;
 }
-
 .background, .firstcontainer, .secondcontainer, .thirdcontainer, .fourthcontainer {
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -12,7 +11,6 @@ body, html {
   min-height: 100%;
   padding-top: 130px;
 }
-
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -21,11 +19,9 @@ body, html {
   margin: 0px;
   padding: 0px;
 }
-
 a {
   text-decoration: none;
 }
-
 navigation {
   background: #000;
   float: left;
@@ -49,12 +45,10 @@ navigation ul li {
   padding-right: 15px;
   width: auto;
 }
-
 .firstcontainer {
   background-image: url("../images/first.jpg");
   margin-top: 45px;
 }
-
 .secondcontainer {
   background-image: url("../images/second.jpg");
 }
@@ -88,7 +82,6 @@ navigation ul li {
   width: 490px;
   float: left;
 }
-
 h1 {
   background: rgba(0, 0, 0, 0.5);
   font-size: 50px;
@@ -96,7 +89,6 @@ h1 {
   margin-bottom: 15px;
   padding-left: 5px;
 }
-
 p {
   background: rgba(0, 0, 0, 0.5);
   font-family: "arial";
@@ -104,7 +96,6 @@ p {
   margin-bottom: 10px;
   padding: 5px;
 }
-
 label {
   background: url("../images/tree.png") no-repeat scroll 0 0 transparent;
   float: right;
@@ -132,15 +123,12 @@ label a {
   -ms-border-radius: 10px;
   border-radius: 10px;
 }
-
 .pull-left {
   float: left !important;
 }
-
 .pull-right {
   float: right !important;
 }
-
 .container {
   margin: 0 auto;
   width: 950px;
