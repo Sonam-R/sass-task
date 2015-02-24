@@ -60,6 +60,7 @@ navigation {
   text-align: center;
   top: 0;
   width:$width-full;
+  z-index:999;
   ul{
     list-style: none;
     margin: $margin*0;
