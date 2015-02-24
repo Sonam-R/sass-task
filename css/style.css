@@ -1,0 +1,147 @@
+body, html {
+  height: 100%;
+}
+
+.background, .firstcontainer, .secondcontainer, .thirdcontainer, .fourthcontainer {
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Oswald", sans-serif;
+  height: 650px;
+  min-height: 100%;
+  padding-top: 130px;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+navigation {
+  background: #000;
+  float: left;
+  font-family: "arial";
+  padding-bottom: 15px;
+  padding-top: 15px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+navigation ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+navigation ul li {
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
+}
+
+.firstcontainer {
+  background-image: url("../images/first.jpg");
+  margin-top: 45px;
+}
+
+.secondcontainer {
+  background-image: url("../images/second.jpg");
+}
+.secondcontainer a {
+  background: #02c7e6;
+  border-color: #0197b2;
+}
+
+.thirdcontainer {
+  background-image: url("../images/third.jpg");
+}
+.thirdcontainer a {
+  background: #8db737;
+  border-color: #719d18;
+}
+
+.fourthcontainer {
+  background-image: url("../images/fourth.jpg");
+}
+.fourthcontainer a {
+  background: #cc0000;
+  border-color: #a20303;
+}
+
+.right-block {
+  width: 33.33333%;
+  float: right;
+}
+
+.left-block {
+  width: 490px;
+  float: left;
+}
+
+h1 {
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+
+p {
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "arial";
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+label {
+  background: url("../images/tree.png") no-repeat scroll 0 0 transparent;
+  float: right;
+  height: 333px;
+  position: relative;
+  width: 360px;
+}
+label a {
+  background: none repeat scroll 0 0 #ff9900;
+  border-color: #cc6600;
+  border-style: solid;
+  border-width: 2px;
+  bottom: -60px;
+  display: inline-block;
+  font-size: 30px;
+  left: 0;
+  line-height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 207px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.container {
+  margin: 0 auto;
+  width: 950px;
+}
