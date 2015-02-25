@@ -1,9 +1,10 @@
 body, html {
   height: 100%;
 }
+
 .background, .firstcontainer, .secondcontainer, .thirdcontainer, .fourthcontainer {
   background-attachment: fixed;
-  background-position: 50% 50%;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Oswald", sans-serif;
@@ -11,6 +12,13 @@ body, html {
   min-height: 100%;
   padding-top: 130px;
 }
+.background:nth-child(2n+1) .right-block, .firstcontainer:nth-child(2n+1) .right-block, .secondcontainer:nth-child(2n+1) .right-block, .thirdcontainer:nth-child(2n+1) .right-block, .fourthcontainer:nth-child(2n+1) .right-block {
+  float: left;
+}
+.background:nth-child(2n+1) .left-block, .firstcontainer:nth-child(2n+1) .left-block, .secondcontainer:nth-child(2n+1) .left-block, .thirdcontainer:nth-child(2n+1) .left-block, .fourthcontainer:nth-child(2n+1) .left-block {
+  float: right;
+}
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -19,9 +27,11 @@ body, html {
   margin: 0px;
   padding: 0px;
 }
+
 a {
   text-decoration: none;
 }
+
 navigation {
   background: #000;
   float: left;
@@ -46,36 +56,26 @@ navigation ul li {
   padding-right: 15px;
   width: auto;
 }
+
 .firstcontainer {
-  background-image: url("../images/first.jpg");
+  background-image: url(../images/first.jpg?1424861101);
   margin-top: 45px;
 }
+
 .secondcontainer {
-  background-image: url("../images/second.jpg");
-}
-.secondcontainer a {
-  background: #02c7e6;
-  border-color: #0197b2;
+  background-image: url(../images/second.jpg?1424861101);
 }
 
 .thirdcontainer {
-  background-image: url("../images/third.jpg");
-}
-.thirdcontainer a {
-  background: #8db737;
-  border-color: #719d18;
+  background-image: url(../images/third.jpg?1424861101);
 }
 
 .fourthcontainer {
-  background-image: url("../images/fourth.jpg");
-}
-.fourthcontainer a {
-  background: #cc0000;
-  border-color: #a20303;
+  background-image: url(../images/fourth.jpg?1424861101);
 }
 
 .right-block {
-  width: 33.33333%;
+  width: 33.33333333%;
   float: right;
 }
 
@@ -83,6 +83,7 @@ navigation ul li {
   width: 490px;
   float: left;
 }
+
 h1 {
   background: rgba(0, 0, 0, 0.5);
   font-size: 50px;
@@ -90,6 +91,7 @@ h1 {
   margin-bottom: 15px;
   padding-left: 5px;
 }
+
 p {
   background: rgba(0, 0, 0, 0.5);
   font-family: "arial";
@@ -97,40 +99,63 @@ p {
   margin-bottom: 10px;
   padding: 5px;
 }
+
 label {
-  background: url("../images/tree.png") no-repeat scroll 0 0 transparent;
+  background: url(../images/tree.png?1424861101) no-repeat scroll 0 0 transparent;
   float: right;
   height: 333px;
+  padding-top: 330px;
   position: relative;
+  text-align: center;
   width: 360px;
 }
-label a {
-  background: none repeat scroll 0 0 #ff9900;
-  border-color: #cc6600;
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.container {
+  margin: 0 auto;
+  width: 950px;
+}
+
+.button {
   border-style: solid;
   border-width: 2px;
-  bottom: -60px;
+  cursor: pointer;
   display: inline-block;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
-  left: 0;
   line-height: 60px;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
   text-align: center;
   width: 207px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px;
+  cursor: pointer;
 }
-.pull-left {
-  float: left !important;
+
+.button-orange {
+  background: #ff9900;
+  border-color: #cc6600;
 }
-.pull-right {
-  float: right !important;
+
+.button-blue {
+  background: #02c7e6;
+  border-color: #0197b2;
 }
-.container {
-  margin: 0 auto;
-  width: 950px;
+
+.button-green {
+  background: #8db737;
+  border-color: #719d18;
+}
+
+.button-red {
+  background: #cc0000;
+  border-color: #a20303;
 }

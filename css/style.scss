@@ -30,13 +30,19 @@ body, html{
 }
 .background {
   background-attachment: fixed;
-  background-position: 50% 50%;
+  background-position:center center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: $oswald;
   height: 650px;
   min-height: $height-full;
   padding-top: $padding*13;
+  &:nth-child(2n+1) .right-block{
+    float:left;
+  }
+  &:nth-child(2n+1) .left-block{
+    float:right;
+  }
 }
 *{
   -moz-box-sizing: border-box;
@@ -81,26 +87,14 @@ navigation {
 .secondcontainer{
   background-image:url("../images/second.jpg");
   @extend .background;
-  a{
-    background: $blue-color;
-    border-color: $dark-blue;
-  }
 }
 .thirdcontainer{
   background-image:url("../images/third.jpg");
   @extend .background;
-  a{
-    background:$green-color;
-    border-color:$dark-green;
-  }
 }
 .fourthcontainer{
   background-image:url("../images/fourth.jpg");
   @extend .background;
-  a{
-    background:$red-color;
-    border-color:$dark-red;
-  }
 }
 .right-block{
   width:$width-full/3;
@@ -128,25 +122,10 @@ label{
   background: url("../images/tree.png") no-repeat scroll 0 0 transparent;
   float: right;
   height: 333px;
+  padding-top: $padding*33;
   position: relative;
+  text-align: center;
   width: 360px;
-  a{
-    background: none repeat scroll 0 0 #ff9900;
-    border-color: #cc6600;
-    border-style: solid;
-    border-width: 2px;
-    bottom: -60px;
-    display: inline-block;
-    font-size:$size-30;
-    left: 0;
-    line-height: 60px;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 207px;
-    @include border-radius(10px);
-  }
 }
 .pull-left{
   float: left !important;
@@ -157,4 +136,33 @@ label{
 .container{
   margin:0 auto;
   width:950px;
+}
+.button{
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size:$size-30;
+  line-height: 60px;
+  text-align: center;
+  width: 207px;
+  @include border-radius(10px);
+}
+.button-orange{
+  background:$orange-color;
+  border-color:$dark-orange;
+}
+.button-blue{
+  background: $blue-color;
+  border-color: $dark-blue;
+}
+.button-green{
+  background:$green-color;
+  border-color:$dark-green;
+}
+
+.button-red{
+  background:$red-color;
+  border-color:$dark-red;
 }
